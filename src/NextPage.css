@@ -1,0 +1,54 @@
+/* Smaller container size */
+.nextpage-container {
+    width: 400px; /* Reduced width */
+    height: 220px; /* Reduced height to maintain aspect ratio */
+    background-image: url('/path-to-your-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Tree positioning */
+  .left-tree,
+  .right-tree {
+    position: absolute;
+    bottom: 0;
+    width: 80px; /* Adjust size to fit the smaller container */
+    height: auto;
+  }
+  
+  .left-tree {
+    left: 0;
+  }
+  
+  .right-tree {
+    right: 0;
+  }
+  
+  /* Apple and text positioning */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .apple {
+    width: 70px; /* Smaller apple size */
+    height: auto;
+  }
+  
+  .text {
+    font-size: 20px; /* Smaller font size */
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    text-transform: uppercase;
+  }
+  
